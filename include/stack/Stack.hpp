@@ -39,6 +39,18 @@ void Stack<T>::push(T value){
     this->size++;
 }
 
+/*
+ * void Stack<T>::pop()
+ * remove the first item from the stack
+*/
+template<typename T>
+void Stack<T>::pop(){
+    if(this->size != 0){
+        this->top = this->top->next_ptr;
+        this->size--;
+    }
+}
+
 
 
 #endif //_STACK_HPP_Z_
