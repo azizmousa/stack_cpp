@@ -60,4 +60,13 @@ T Stack<T>::get_top()const{
     return this->top->value;
 }
 
+/*
+ * size_t Stack<T>::get_size()const
+ * return the stack size
+*/
+template<typename T>
+size_t Stack<T>::get_size()const{
+    return this->size;
+}
+
 #endif //_STACK_HPP_Z_
