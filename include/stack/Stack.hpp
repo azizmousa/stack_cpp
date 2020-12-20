@@ -51,6 +51,13 @@ void Stack<T>::pop(){
     }
 }
 
-
+/*
+ * T Stack<T>::get_top()const
+ * return the top item value without remove it
+*/
+template<typename T>
+T Stack<T>::get_top()const{
+    return this->top->value;
+}
 
 #endif //_STACK_HPP_Z_
