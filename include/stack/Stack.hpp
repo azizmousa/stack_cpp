@@ -57,7 +57,9 @@ void Stack<T>::pop(){
 */
 template<typename T>
 T Stack<T>::get_top()const{
-    return this->top->value;
+    if(this->top != nullptr)
+        return this->top->value;
+    return T{};
 }
 
 /*
